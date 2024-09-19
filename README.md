@@ -115,8 +115,8 @@ git clone (url)<br>
 <h2>SSH key</h2>
 like authentication<br>
 to make sure you are the owner<br>
-
-<h2>in terminal</h2>
+<br>
+in terminal<br>
 ssh-keygen -t ed25519 -C "your_email@example.com"<br>
 name your key<br>
 set a passphrase<br>
@@ -124,17 +124,17 @@ copy public keyy(.pub)<br>
 copy and add the key to github<br>
 
 <h2>github workflow</h2>
-write code
-|
-commit code changes
-|
-pull request
+write code<br>
+|<br>
+commit code changes<br>
+|<br>
+pull request<br>
 
 <h2>local git workflow</h2>
-write code
-|
-stage code changes (git add)
-|
-commit changes
-|
-git push
+write code<br>
+|<br>
+stage code changes (git add)<br>
+|<br>
+commit changes<br>
+|<br>
+git push<br>
