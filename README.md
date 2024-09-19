@@ -1,6 +1,6 @@
-<h1>git-and-github<\h1><br>
+<h1>git-and-github</h1>h1><br>
 
-<h2>git<\h2>
+<h2>git</h2>
 free<br>
 open source<br>
 scalable<br>
@@ -9,14 +9,14 @@ local<br>
 cheap branching and merging<br>
 it is a verion control system<br>
 
-<h2>version control system (vcs)<\h2>
+<h2>version control system (vcs)</h2>
 keeps track of project and files<br>
 all details at one place <br>
 wont over ride code<br>
 they are of 2 types<br>
 centralised and distributed<br>
 
-<h2>centralized<\h2>
+<h2>centralized</h2>
 there is a center server which is the main<br>
 all can acesss and push back code<br>
 collabrative<br>
@@ -24,54 +24,54 @@ good for small projects<br>
 backup<br>
 synchronization<br>
 
-<h2>distributed<\h2>
+<h2>distributed</h2>
 independent<br>
 complete project in machine<br>
 mirroring repos<br>
 we have local repo which we can push via network connection and can be pulled by someone else<br>
 Example- git, mercurick<br>
 
-<h2>github<\h2>
+<h2>github</h2>
 web based hosting service<br>
 cant use without git<br>
 cloud based<br>
 
-<h2>local repository<\h2>
+<h2>local repository</h2>
 working on code, changes and push to repo<br>
 
-<h2>index or working directory and staging area<\h2>
+<h2>index or working directory and staging area</h2>
 format and review code<br>
 
-<h2>push<\h2>
+<h2>push</h2>
 send a change to another repo (upload)<br>
 
-<h2>pull<\h2>
+<h2>pull</h2>
 grab a change from a repo (download)<br>
 
-<h2>clone <\h2>
+<h2>clone </h2>
 bring a repo copy<br>
 
-<h2>add<\h2>
+<h2>add</h2>
 before commit (track files)<br>
 
-<h2>blob (binary large object)<\h2>
+<h2>blob (binary large object)</h2>
 each file has version represented by blob<br>
 holds data and meta data<br>
 in git files are not addressed by names but are content addressed<br>
 
-<h2>tree<\h2>
+<h2>tree</h2>
 it is an object<br>
 directory structured<br>
 holds blobs and sub directories<br>
 maintains association and relationship<br>
 binary files holds references of blobs<br>
 
-<h2>in github UI color<\h2>
+<h2>in github UI color</h2>
 white - no change<br>
 green - changed<br>
 red - removed<br>
 
-<h2>workflow of git<\h2>
+<h2>workflow of git</h2>
  working directory<br>
  |<br>
  (git add)<br>
@@ -82,13 +82,13 @@ red - removed<br>
  |<br>
  repository (change)<br>
 
-<h2> git command line<\h2>
+<h2> git command line</h2>
 
-<h3>git --version<\h3>
+<h3>git --version</h3>
 for version<br>
 
-<h3>git config --global user.name "Your Name"<\h3>
-<h3>git config --global user.email "your.email@example.com"<\h3>
+<h3>git config --global user.name "Your Name"</h3>
+<h3>git config --global user.email "your.email@example.com"</h3>
 for linking<br>
 
 <h3>git init<\h3>
@@ -97,18 +97,18 @@ creates a github repo<br>
 <h3>git status<\h3>
 gives current status<br>
 
-<h3>git commit -m<\h3>
+<h3>git commit -m</h3>
 -m is for message<br>
 
-<h3>git remote -v<\h3>
+<h3>git remote -v</h3>
 check<br>
 
-<h3>git remote add origin (link).git<\h3>
+<h3>git remote add origin (link).git</h3>
 
-<h3>git push master origin<\h3>
+<h3>git push master origin</h3>
 for global<br>
 
-<h2>to clone a repo<\h2>
+<h2>to clone a repo</h2>
 copy url<br>
 git clone (url)<br>
 
@@ -123,14 +123,14 @@ set a passphrase<br>
 copy public keyy(.pub)<br>
 copy and add the key to github<br>
 
-<h2>github workflow<\h2>
+<h2>github workflow</h2>
 write code
 |
 commit code changes
 |
 pull request
 
-<h2>local git workflow<\h2>
+<h2>local git workflow</h2>
 write code
 |
 stage code changes (git add)
