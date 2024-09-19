@@ -84,28 +84,28 @@ red - removed<br>
 
 <h2> git command line</h2>
 
-<h3>git --version</h3>
+<h4>git --version</h4>
 for version<br>
 
-<h3>git config --global user.name "Your Name"</h3>
-<h3>git config --global user.email "your.email@example.com"</h3>
+<h4>git config --global user.name "Your Name"</h4>
+<h4>git config --global user.email "your.email@example.com"</h4>
 for linking<br>
 
-<h3>git init<\h3>
+<h4>git init<\h4>
 creates a github repo<br>
 
-<h3>git status<\h3>
+<h4>git status<\h4>
 gives current status<br>
 
-<h3>git commit -m</h3>
+<h4>git commit -m</h4>
 -m is for message<br>
 
-<h3>git remote -v</h3>
+<h4>git remote -v</h4>
 check<br>
 
-<h3>git remote add origin (link).git</h3>
+<h4>git remote add origin (link).git</h4>
 
-<h3>git push master origin</h3>
+<h4>git push master origin</h4>
 for global<br>
 
 <h2>to clone a repo</h2>
