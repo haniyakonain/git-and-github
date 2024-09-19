@@ -112,7 +112,7 @@ for global<br>
 copy url<br>
 git clone (url)<br>
 
-<h2>SSH key<\h2>
+<h2>SSH key</h2>
 like authentication<br>
 to make sure you are the owner<br>
 
