@@ -91,10 +91,10 @@ for version<br>
 <h4>git config --global user.email "your.email@example.com"</h4>
 for linking<br>
 
-<h4>git init<\h4>
+<h4>git init</h4>
 creates a github repo<br>
 
-<h4>git status<\h4>
+<h4>git status</h4>
 gives current status<br>
 
 <h4>git commit -m</h4>
