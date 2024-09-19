@@ -1,4 +1,4 @@
-<h1>git-and-github</h1>h1><br>
+<h1>git-and-github</h1><br>
 
 <h2>git</h2>
 free<br>
