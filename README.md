@@ -136,55 +136,101 @@ stage code changes (git add)<br>
 |<br>
 commit changes<br>
 |<br>
-git push<br>
+git push</h2>
 
-branch 
+<h2>branch </h2>
 all commits
 
-master branch
-default branch
+<h2>master branch</h2>
+default branch<br>
 
-feature branch
-adding major changes/features
-takes master branch part and creates a feature branch
-feature branch has al commits
-master branch has no awarness of feature branch
+<h2>feature branch</h2><
+adding major changes / features<br>
+takes master branch part and creates a feature branch<br>
+feature branch has all commits<br>
+master branch has no awarness of feature branch<br>
 
-merging
-changes of one branch to another
+<h2>merging</h2>
+changes of one branch to another<br>
 
-hotfix branch
-for fixing a bug
-feature branch is not stable 
-so we need to create another branch do changes
-and merge back to master
+<h2>hotfix branch</h2>
+for fixing a bug<br>
+feature branch is not stable <br>
+so we need to create another branch do changes<br>
+and merge back to master<br>
 
-git branch
-which branch we are at
-* indicates which current branch
+<h2>git branch</h2>
+which branch we are at<br>
+(star*) indicates which current branch<br>
 
-  git checkout
-  move across  branch
+<h2>git checkout</h2>
+move across  branch<br>
 
-  -b
-  to create a new branch
-  syntax-
-  git checkout -b branch_name
+<h2>-b</h2>
+to create a new branch<br>
+syntax-<br>
+git checkout -b branch_name<br>
 
-  git merge branch_name
-  to make it available on main
+<h2>git merge branch_name</h2>
+to make it available on main<br>
 
-  git diff
-  compare across branch
-  white- unchanged
-  red- not present in main branch or is present in feature branch
+<h2>git diff</h2>
+compare across branch<br>
+white- unchanged<br>
+red- not present in main branch or<br> is present in feature branch<br>
 
-  pull request
-  merge changes from one branch to another
+<h2>pull request</h2>
+merge changes from one branch to another<br>
 
-  merge conflict
-  git doesnt know which changes are redundan, what to keep or remove
-  2 types
+<h2>merge conflict</h2>
+git doesnt know which changes are redundant, what to keep or remove<br>
+2 types<br>
 
-  while starting the merge process
-  
+<h2>while starting the merge process</h2>
+merging wont start if theirare changes in working directory or staging area<br>
+
+<h2>during merging process</h2>
+conflict between local branch and branch merged<br>
+
+<h2>git log --merge</h2>
+list of all commits that are causing the conflict<br>
+
+<h2>git diff</h2>
+identifies diffrence between the repositories or files<br>
+
+<h2>git checkout</h2>
+switch to diffrent branches<br>
+
+<h2>git reset</h2>
+go back to a state where it was in a working condition<br>
+
+</h2>git reset --mixed</h2>
+used to undo changes in working directory or staging area
+
+<h2>git merge --abort</h2>
+exsiting the merge and return back to the orignial state<br>
+
+<h2>git branch -d branch_name</h2>
+to delete a branch<br>
+
+<h2>stash</h2>
+keep it aside and use afterwards<br>
+
+</h2>issue </h2>
+some comment another person can give for a problem<br>
+new issue<br>
+title<br>
+description<br>
+submit<br>
+a number with the issue is given example-#3<br>
+
+<h2>to close issue</h2>
+to close the issue as a developer<br>
+after solving a problem<br>
+main<br>
+pull request<br>
+title <br>
+description<br>
+closes #issue number<br>
+create pull request<br>
+closes is a keyword there are many keyords like close, resolve, etc.<br>
