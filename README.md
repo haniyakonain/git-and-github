@@ -170,4 +170,21 @@ which branch we are at
   to create a new branch
   syntax-
   git checkout -b branch_name
+
+  git merge branch_name
+  to make it available on main
+
+  git diff
+  compare across branch
+  white- unchanged
+  red- not present in main branch or is present in feature branch
+
+  pull request
+  merge changes from one branch to another
+
+  merge conflict
+  git doesnt know which changes are redundan, what to keep or remove
+  2 types
+
+  while starting the merge process
   
