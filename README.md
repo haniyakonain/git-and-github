@@ -1,6 +1,5 @@
-<h1>git-and-github</h1><br>
+<h1>git</h1><br>
 
-<h2>git</h2>
 free<br>
 open source<br>
 scalable<br>
