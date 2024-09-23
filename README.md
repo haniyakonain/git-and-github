@@ -138,3 +138,37 @@ stage code changes (git add)<br>
 commit changes<br>
 |<br>
 git push<br>
+
+branch 
+all commits
+
+master branch
+default branch
+
+feature branch
+adding major changes/features
+takes master branch part and creates a feature branch
+feature branch has al commits
+master branch has no awarness of feature branch
+
+merging
+changes of one branch to another
+
+hotfix branch
+for fixing a bug
+feature branch is not stable 
+so we need to create another branch do changes
+and merge back to master
+
+git branch
+which branch we are at
+* indicates which current branch
+
+  git checkout
+  move across  branch
+
+  -b
+  to create a new branch
+  syntax-
+  git checkout -b branch_name
+  
