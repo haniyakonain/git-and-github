@@ -144,7 +144,7 @@ all commits
 <h2>master branch</h2>
 default branch<br>
 
-<h2>feature branch</h2><
+<h2>feature branch</h2>
 adding major changes / features<br>
 takes master branch part and creates a feature branch<br>
 feature branch has all commits<br>
@@ -204,7 +204,7 @@ switch to diffrent branches<br>
 <h2>git reset</h2>
 go back to a state where it was in a working condition<br>
 
-</h2>git reset --mixed</h2>
+<h2>git reset --mixed</h2>
 used to undo changes in working directory or staging area
 
 <h2>git merge --abort</h2>
@@ -216,7 +216,7 @@ to delete a branch<br>
 <h2>stash</h2>
 keep it aside and use afterwards<br>
 
-</h2>issue </h2>
+<h2>issue </h2>
 some comment another person can give for a problem<br>
 new issue<br>
 title<br>
