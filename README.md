@@ -234,3 +234,55 @@ description<br>
 closes #issue number<br>
 create pull request<br>
 closes is a keyword there are many keyords like close, resolve, etc.<br>
+
+<h1>To host a website using Git and GitHub</h1>
+1. Initialize Git in Your Project Directory
+Navigate to your project directory and initialize a Git repository.
+
+<h3>git init</h3>
+
+2. Add Your Files to the Repository
+Add all your website files (HTML, CSS, JavaScript, images, etc.) to the repository.
+
+<h3>git add .</h3>
+
+3. Commit the Files
+Commit the added files with a descriptive message.
+
+<h3>git commit -m "Initial commit of my website"</h3>
+
+4. Add the Remote Repository
+Link your local repository to the GitHub repository you’ve created. Replace YOUR-USERNAME with your GitHub username and REPO-NAME with the name of your repository.
+
+<h3>git remote add origin https://github.com/YOUR-USERNAME/REPO-NAME.git</h3>
+
+5. Push the Files to GitHub
+Push the committed files to the main branch of your GitHub repository. If you’re using a branch other than main (e.g., master), use that branch name instead.
+
+<h3>git push -u origin main</h3>
+
+6. Set Up GitHub Pages
+Go to your repository on GitHub and click on the "Settings" tab. Scroll down to the "GitHub Pages" section and:
+
+Under "Source," choose the branch you want to use (main or master).
+You can also select a specific folder (e.g., /docs) if your website files are stored in a subdirectory.
+Click "Save."
+GitHub will then provide a URL where your website is hosted, typically https://YOUR-USERNAME.github.io/REPO-NAME/.
+
+7. Update Your Website
+If you make changes to your website, follow these steps to update it:
+
+Add the changes:
+
+<h3>git add .</h3>
+
+Commit the changes:
+
+<h3>git commit -m "Update website content"</h3>
+
+Push the changes to GitHub:
+
+<h3>git push origin main</h3>
+
+This will automatically update the hosted version of your website on GitHub Pages.
+
