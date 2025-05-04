@@ -179,4 +179,98 @@ git stash           # Stash changes
 git stash apply     # Reapply stashed changes
 ```
 
+## 🐛 GitHub Issues
+
+Issues are used to track tasks, enhancements, or bugs for your project. They allow collaboration and communication.
+
+### Creating an Issue
+
+1. Go to the **Issues** tab in your GitHub repository.
+2. Click **New issue**.
+3. Add a **title** and a **description** of the problem.
+4. Click **Submit**.
+5. The issue will be assigned a number, like `#3`.
+
+### Closing an Issue Automatically
+
+When you create a **Pull Request (PR)** to solve a problem, include a keyword like:
+
+```text
+closes #3
+````
+
+Other supported keywords: `close`, `closes`, `closed`, `fix`, `fixes`, `fixed`, `resolve`, `resolves`, `resolved`.
+
+This will automatically close the issue when the PR is merged.
+
 ---
+
+## 🌐 Hosting a Website Using Git and GitHub Pages
+
+### 1. Initialize Git in Your Project Directory
+
+Navigate to your local project folder and run:
+
+```bash
+git init
+```
+
+### 2. Add Your Website Files
+
+Add all project files (HTML, CSS, JS, images, etc.):
+
+```bash
+git add .
+```
+
+### 3. Commit the Files
+
+Commit your files with a clear message:
+
+```bash
+git commit -m "Initial commit of my website"
+```
+
+### 4. Add a Remote Repository
+
+Replace `YOUR-USERNAME` and `REPO-NAME` with your GitHub username and repository name:
+
+```bash
+git remote add origin https://github.com/YOUR-USERNAME/REPO-NAME.git
+```
+
+### 5. Push Files to GitHub
+
+Push the changes to the `main` branch (or `master` if using that):
+
+```bash
+git push -u origin main
+```
+
+### 6. Set Up GitHub Pages
+
+1. Go to your GitHub repository.
+2. Click on the **Settings** tab.
+3. Scroll to the **Pages** section.
+4. Under **Source**, choose the branch (`main` or `master`).
+5. (Optional) Select a folder like `/docs` if your files are in a subdirectory.
+6. Click **Save**.
+
+Your website will be available at:
+
+```
+https://YOUR-USERNAME.github.io/REPO-NAME/
+```
+
+### 7. Update Your Website
+
+After making updates:
+
+```bash
+git add .
+git commit -m "Update website content"
+git push origin main
+```
+
+The changes will automatically reflect on your GitHub Pages site.
+
