@@ -1,288 +1,126 @@
-<h1>git</h1><br>
-
-free<br>
-open source<br>
-scalable<br>
-superfast<br>
-local<br>
-cheap branching and merging<br>
-it is a verion control system<br>
-
-<h2>version control system (vcs)</h2>
-keeps track of project and files<br>
-all details at one place <br>
-wont over ride code<br>
-they are of 2 types<br>
-centralised and distributed<br>
-
-<h2>centralized</h2>
-there is a center server which is the main<br>
-all can acesss and push back code<br>
-collabrative<br>
-good for small projects<br>
-backup<br>
-synchronization<br>
-
-<h2>distributed</h2>
-independent<br>
-complete project in machine<br>
-mirroring repos<br>
-we have local repo which we can push via network connection and can be pulled by someone else<br>
-Example- git, mercurick<br>
-
-<h2>github</h2>
-web based hosting service<br>
-cant use without git<br>
-cloud based<br>
-
-<h2>local repository</h2>
-working on code, changes and push to repo<br>
-
-<h2>index or working directory and staging area</h2>
-format and review code<br>
-
-<h2>push</h2>
-send a change to another repo (upload)<br>
-
-<h2>pull</h2>
-grab a change from a repo (download)<br>
-
-<h2>clone </h2>
-bring a repo copy<br>
-
-<h2>add</h2>
-before commit (track files)<br>
-
-<h2>blob (binary large object)</h2>
-each file has version represented by blob<br>
-holds data and meta data<br>
-in git files are not addressed by names but are content addressed<br>
-
-<h2>tree</h2>
-it is an object<br>
-directory structured<br>
-holds blobs and sub directories<br>
-maintains association and relationship<br>
-binary files holds references of blobs<br>
-
-<h2>in github UI color</h2>
-white - no change<br>
-green - changed<br>
-red - removed<br>
-
-<h2>workflow of git</h2>
- working directory<br>
- |<br>
- (git add)<br>
- |<br>
- staging area <br>
- |<br>
- (git commit)<br>
- |<br>
- repository (change)<br>
-
-<h2> git command line</h2>
-
-<h4>git --version</h4>
-for version<br>
-
-<h4>git config --global user.name "Your Name"</h4>
-<h4>git config --global user.email "your.email@example.com"</h4>
-for linking<br>
-
-<h4>git init</h4>
-creates a github repo<br>
-
-<h4>git status</h4>
-gives current status<br>
-
-<h4>git commit -m</h4>
--m is for message<br>
-
-<h4>git remote -v</h4>
-check<br>
-
-<h4>git remote add origin (link).git</h4>
-
-<h4>git push master origin</h4>
-for global<br>
-
-<h2>to clone a repo</h2>
-copy url<br>
-git clone (url)<br>
+# Git and GitHub Basics
 
-<h2>SSH key</h2>
-like authentication<br>
-to make sure you are the owner<br>
-<br>
-in terminal<br>
-ssh-keygen -t ed25519 -C "your_email@example.com"<br>
-name your key<br>
-set a passphrase<br>
-copy public keyy(.pub)<br>
-copy and add the key to github<br>
-
-<h2>github workflow</h2>
-write code<br>
-|<br>
-commit code changes<br>
-|<br>
-pull request<br>
-
-<h2>local git workflow</h2>
-write code<br>
-|<br>
-stage code changes (git add)<br>
-|<br>
-commit changes<br>
-|<br>
-git push</h2>
-
-<h2>branch </h2>
-all commits
-
-<h2>master branch</h2>
-default branch<br>
-
-<h2>feature branch</h2>
-adding major changes / features<br>
-takes master branch part and creates a feature branch<br>
-feature branch has all commits<br>
-master branch has no awarness of feature branch<br>
-
-<h2>merging</h2>
-changes of one branch to another<br>
-
-<h2>hotfix branch</h2>
-for fixing a bug<br>
-feature branch is not stable <br>
-so we need to create another branch do changes<br>
-and merge back to master<br>
+## Git Overview
 
-<h2>git branch</h2>
-which branch we are at<br>
-(star*) indicates which current branch<br>
+Git is a free, open-source, scalable, superfast, and local version control system. It allows for cheap branching and merging, making it ideal for version control in software development.
 
-<h2>git checkout</h2>
-move across  branch<br>
+### What is a Version Control System (VCS)?
 
-<h2>-b</h2>
-to create a new branch<br>
-syntax-<br>
-git checkout -b branch_name<br>
+A version control system keeps track of project changes and files in a central place, preventing code from being overridden. There are two types of VCS:
+- **Centralized VCS**: A central server holds the main repository, and all users push/pull changes from it.
+- **Distributed VCS**: Each developer has a complete copy of the project and its history on their machine. Examples: Git, Mercurial.
 
-<h2>git merge branch_name</h2>
-to make it available on main<br>
+### Git vs GitHub
 
-<h2>git diff</h2>
-compare across branch<br>
-white- unchanged<br>
-red- not present in main branch or<br> is present in feature branch<br>
+- **Git** is the version control system.
+- **GitHub** is a web-based hosting service for Git repositories. It provides cloud-based access to your repositories.
 
-<h2>pull request</h2>
-merge changes from one branch to another<br>
+## Git Workflow
 
-<h2>merge conflict</h2>
-git doesnt know which changes are redundant, what to keep or remove<br>
-2 types<br>
+1. **Working Directory**: You modify your code here.
+2. **Staging Area**: You prepare your code for commit using `git add`.
+3. **Repository**: Committed code is stored here.
 
-<h2>while starting the merge process</h2>
-merging wont start if theirare changes in working directory or staging area<br>
+### Basic Git Commands
 
-<h2>during merging process</h2>
-conflict between local branch and branch merged<br>
+- `git --version`: Check the installed version of Git.
+- `git config --global user.name "Your Name"`: Set your Git username.
+- `git config --global user.email "your.email@example.com"`: Set your Git email.
+- `git init`: Initialize a new Git repository.
+- `git status`: Check the status of your repository.
+- `git add .`: Stage changes for commit.
+- `git commit -m "message"`: Commit staged changes with a message.
+- `git remote -v`: View remote repositories.
+- `git remote add origin <repo-url>`: Add a remote repository.
+- `git push -u origin main`: Push changes to GitHub.
 
-<h2>git log --merge</h2>
-list of all commits that are causing the conflict<br>
+### Branching and Merging
 
-<h2>git diff</h2>
-identifies diffrence between the repositories or files<br>
+- `git branch`: View the list of branches.
+- `git checkout <branch>`: Switch to a different branch.
+- `git checkout -b <branch-name>`: Create a new branch and switch to it.
+- `git merge <branch-name>`: Merge changes from one branch to another.
+- `git diff`: View differences between branches.
+- `git log --merge`: View commits causing merge conflicts.
+- `git reset`: Reset to a previous commit.
+- `git reset --mixed`: Undo changes in working directory/staging area.
+- `git merge --abort`: Abort the merge process.
+- `git branch -d <branch-name>`: Delete a branch.
 
-<h2>git checkout</h2>
-switch to diffrent branches<br>
+### GitHub Pull Requests
 
-<h2>git reset</h2>
-go back to a state where it was in a working condition<br>
+A pull request (PR) is how you merge changes from one branch to another in GitHub. PRs allow collaborators to review and discuss changes before merging them into the main branch.
 
-<h2>git reset --mixed</h2>
-used to undo changes in working directory or staging area
+### Handling Merge Conflicts
 
-<h2>git merge --abort</h2>
-exsiting the merge and return back to the orignial state<br>
+Merge conflicts happen when Git cannot automatically decide which changes to keep. To resolve conflicts:
+- Use `git status` to view conflicting files.
+- Manually resolve conflicts in those files.
+- Commit the resolved changes.
 
-<h2>git branch -d branch_name</h2>
-to delete a branch<br>
+## SSH Key Setup for GitHub
 
-<h2>stash</h2>
-keep it aside and use afterwards<br>
+1. Generate an SSH key:  
+   `ssh-keygen -t ed25519 -C "your_email@example.com"`
+2. Add the SSH key to GitHub.
 
-<h2>issue </h2>
-some comment another person can give for a problem<br>
-new issue<br>
-title<br>
-description<br>
-submit<br>
-a number with the issue is given example-#3<br>
+### GitHub Pages: Hosting a Website
 
-<h2>to close issue</h2>
-to close the issue as a developer<br>
-after solving a problem<br>
-main<br>
-pull request<br>
-title <br>
-description<br>
-closes #issue number<br>
-create pull request<br>
-closes is a keyword there are many keyords like close, resolve, etc.<br>
+Follow these steps to host a website using GitHub:
 
-<h1>To host a website using Git and GitHub</h1>
-1. Initialize Git in Your Project Directory
-Navigate to your project directory and initialize a Git repository.
+1. **Initialize Git** in your project directory:
+   ```bash
+   git init
+````
 
-<h3>git init</h3>
+2. **Add files** to your Git repository:
 
-2. Add Your Files to the Repository
-Add all your website files (HTML, CSS, JavaScript, images, etc.) to the repository.
+   ```bash
+   git add .
+   ```
 
-<h3>git add .</h3>
+3. **Commit your files**:
 
-3. Commit the Files
-Commit the added files with a descriptive message.
+   ```bash
+   git commit -m "Initial commit of my website"
+   ```
 
-<h3>git commit -m "Initial commit of my website"</h3>
+4. **Link to a GitHub repository**:
 
-4. Add the Remote Repository
-Link your local repository to the GitHub repository you’ve created. Replace YOUR-USERNAME with your GitHub username and REPO-NAME with the name of your repository.
+   ```bash
+   git remote add origin https://github.com/YOUR-USERNAME/REPO-NAME.git
+   ```
 
-<h3>git remote add origin https://github.com/YOUR-USERNAME/REPO-NAME.git</h3>
+5. **Push files to GitHub**:
 
-5. Push the Files to GitHub
-Push the committed files to the main branch of your GitHub repository. If you’re using a branch other than main (e.g., master), use that branch name instead.
+   ```bash
+   git push -u origin main
+   ```
 
-<h3>git push -u origin main</h3>
+6. **Set up GitHub Pages**:
 
-6. Set Up GitHub Pages
-Go to your repository on GitHub and click on the "Settings" tab. Scroll down to the "GitHub Pages" section and:
+   * Go to the "Settings" tab of your GitHub repository.
+   * Scroll to the "GitHub Pages" section.
+   * Select the source branch (usually `main` or `master`).
+   * Click "Save."
+   * Your website will be available at `https://YOUR-USERNAME.github.io/REPO-NAME/`.
 
-Under "Source," choose the branch you want to use (main or master).
-You can also select a specific folder (e.g., /docs) if your website files are stored in a subdirectory.
-Click "Save."
-GitHub will then provide a URL where your website is hosted, typically https://YOUR-USERNAME.github.io/REPO-NAME/.
+7. **Updating the website**:
 
-7. Update Your Website
-If you make changes to your website, follow these steps to update it:
+   * Add and commit new changes:
 
-Add the changes:
+     ```bash
+     git add .
+     git commit -m "Update website content"
+     ```
+   * Push updates to GitHub:
 
-<h3>git add .</h3>
+     ```bash
+     git push origin main
+     ```
 
-Commit the changes:
+## Conclusion
 
-<h3>git commit -m "Update website content"</h3>
+Git and GitHub are powerful tools for version control and collaboration in software development. With Git, you can track changes, collaborate with team members, and manage your project efficiently. GitHub adds the cloud-based hosting and collaboration features necessary for modern software development workflows.
 
-Push the changes to GitHub:
-
-<h3>git push origin main</h3>
-
-This will automatically update the hosted version of your website on GitHub Pages.
 
